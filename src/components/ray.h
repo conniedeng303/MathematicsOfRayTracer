@@ -12,13 +12,14 @@ class ray {
     const vec3& direction() const {return dir;}
     
     //method at that returns the point in time
-    point3 at(double t) const{
-        //mx+b
-        return orig + t*dir%
-    }
+        point3 at(double t) const {
+            //mx+b
+            return orig + t*dir;
+        }
 
     private:
         point3 orig;
         vec3 dir;
-
 };
+
+#endif
